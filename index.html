@@ -1,30 +1,30 @@
-
 <!doctype html>
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>ARIA Tab Control</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+        <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+		
+        <link rel="stylesheet" href="styles/style.css">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
 <body>
- <ul class="tab-widget__list">
-    <li class="tab-widget__item">
-      <a href="#tab-panel-1" class="tab-widget__link">Tab 1</a>
+ <ul class="tab-widget-list" role="tablist" aria-owns="tab1 tab2 tab3">
+    <li class="tab-widget-item" role="presentation">
+      <a tabindex="0" class="tab-widget" id="tab1" role="tab" aria-posinset="1" aria-setsize="3">Tab 1</a>
     </li>
-    <li class="tab-widget__item">
-      <a href="#tab-panel-2" class="tab-widget__link">Tab 2</a>
+    <li class="tab-widget-item" role="presentation">
+      <a tabindex="0" class="tab-widget" id="tab2" role="tab" aria-posinset="2" aria-setsize="3">Tab 2</a>
     </li>
-    <li class="tab-widget__item">
-      <a href="#tab-panel-3" class="tab-widget__link">Tab 3</a>
+    <li class="tab-widget-item" role="presentation">
+      <a tabindex="0" class="tab-widget" id="tab3" role="tab" aria-posinset="3" aria-setsize="3">Tab 3</a>
     </li>
   </ul>
   </body>
